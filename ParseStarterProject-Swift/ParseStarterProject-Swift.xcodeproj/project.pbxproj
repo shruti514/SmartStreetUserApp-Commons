@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		023C4F591CCAE2C5009DA5B8 /* 5c45fea7601361971f06202d034760dc.png in Resources */ = {isa = PBXBuildFile; fileRef = 023C4F581CCAE2C5009DA5B8 /* 5c45fea7601361971f06202d034760dc.png */; };
 		814C3ACA1B69877600E307BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC61B69877600E307BB /* Main.storyboard */; };
 		814C3ACB1B69877600E307BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
 		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
@@ -18,10 +17,13 @@
 		81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81781A49E0DB00E65899 /* AudioToolbox.framework */; };
 		81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */; };
 		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
+		A1AFC5121CCEB2CC00208F9C /* 5c45fea7601361971f06202d034760dc.png in Resources */ = {isa = PBXBuildFile; fileRef = A1AFC5111CCEB2CC00208F9C /* 5c45fea7601361971f06202d034760dc.png */; };
+		A1AFC51A1CCEB87200208F9C /* MusicPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AFC5191CCEB87200208F9C /* MusicPlayerController.swift */; };
+		A1AFC51C1CCEB89C00208F9C /* MusicPlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AFC51B1CCEB89C00208F9C /* MusicPlayerCell.swift */; };
+		A1AFC51E1CCEC31F00208F9C /* LightsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AFC51D1CCEC31F00208F9C /* LightsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		023C4F581CCAE2C5009DA5B8 /* 5c45fea7601361971f06202d034760dc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5c45fea7601361971f06202d034760dc.png; path = ../../../../Downloads/5c45fea7601361971f06202d034760dc.png; sourceTree = "<group>"; };
 		814C3AC71B69877600E307BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +38,10 @@
 		81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		81BA81801A49E10C00E65899 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		A1AFC5111CCEB2CC00208F9C /* 5c45fea7601361971f06202d034760dc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5c45fea7601361971f06202d034760dc.png; sourceTree = "<group>"; };
+		A1AFC5191CCEB87200208F9C /* MusicPlayerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerController.swift; sourceTree = "<group>"; };
+		A1AFC51B1CCEB89C00208F9C /* MusicPlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayerCell.swift; sourceTree = "<group>"; };
+		A1AFC51D1CCEC31F00208F9C /* LightsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +91,13 @@
 		81BA81471A49DA1800E65899 /* ParseStarterProject */ = {
 			isa = PBXGroup;
 			children = (
-				023C4F581CCAE2C5009DA5B8 /* 5c45fea7601361971f06202d034760dc.png */,
+				A1AFC5111CCEB2CC00208F9C /* 5c45fea7601361971f06202d034760dc.png */,
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				814C3AC61B69877600E307BB /* Main.storyboard */,
+				A1AFC5191CCEB87200208F9C /* MusicPlayerController.swift */,
+				A1AFC51B1CCEB89C00208F9C /* MusicPlayerCell.swift */,
+				A1AFC51D1CCEC31F00208F9C /* LightsController.swift */,
 			);
 			path = ParseStarterProject;
 			sourceTree = "<group>";
@@ -174,7 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				023C4F591CCAE2C5009DA5B8 /* 5c45fea7601361971f06202d034760dc.png in Resources */,
+				A1AFC5121CCEB2CC00208F9C /* 5c45fea7601361971f06202d034760dc.png in Resources */,
 				814C3ACA1B69877600E307BB /* Main.storyboard in Resources */,
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
 			);
@@ -189,6 +198,9 @@
 			files = (
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
+				A1AFC51E1CCEC31F00208F9C /* LightsController.swift in Sources */,
+				A1AFC51C1CCEB89C00208F9C /* MusicPlayerCell.swift in Sources */,
+				A1AFC51A1CCEB87200208F9C /* MusicPlayerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
