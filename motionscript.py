@@ -2,6 +2,7 @@
 # Connects to Parse Database and save the count when object detected
 
 
+
 #Import Libraries
 import RPi.GPIO as GPIO
 import time
