@@ -21,27 +21,34 @@ def main():
 
     :return:
     """
+    api = init_tweepy_api()
+    photo_path = ""
+    count = 1
+    #while count > 0:
+    
+    button = Button(17)
+    camera = PiCamera()
+    camera.start_preview()
     while True:
+	count -= 1
         try:
             #curtime, photo_name = click_camera_cli()
-
-            api = init_tweepy_api()
-
-            button = Button(17)
-            camera = PiCamera()
-
-            curtime = datetime.now()
+	    curtime = datetime.now()
             now = curtime.strftime('%Y%m%d-%H%M%S')
             photo_name = now + '.jpg'
 
             # Take a picture upon button press
-            camera.start_preview()
+	    print "Starting camera preview"
+	    print "Is button pressed: " + str(button.is_pressed)
             button.wait_for_press()
+	    print "Button pressed"
             photo_path = '/home/pi/' + photo_name
             camera.capture(photo_path)
-            camera.stop_preview()
+	    print "Photo taken " + photo_path
+            #camera.stop_preview()
 
             # Send the tweet with photo
+	    print "Tweeting pic at : " + photo_path
             status = 'Photo auto-tweet from Smart Tree: ' + curtime.strftime('%Y/%m/%d %H:%M:%S')
             api.update_with_media(photo_path, status=status)
             sleep(10)
@@ -49,8 +56,9 @@ def main():
             cleanup_pic(photo_path)
         except:
             # Catch all errors and continue looping
-            print "Unexpected error:", sys.exc_info()[0]
+            print "Unexpected error:", sys.exc_info()
             cleanup_pic(photo_path)
+	    
 
 
 
